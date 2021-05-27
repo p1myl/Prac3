@@ -68,6 +68,10 @@ public class Main {
     }
 
     public static String rps(String p1_word, String p2_word){
+        if (p1_word.equals(p2_word)){
+            return "Draw";
+        }
+
         ArrayList<String> input = new ArrayList<>();
         input.add(p1_word);
         input.add(p2_word);
